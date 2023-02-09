@@ -1,0 +1,76 @@
+.animation{
+    font-size: small;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid white;
+    position: relative;
+    left: 0;
+
+    animation-name: circle;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.animation:hover{
+        animation-play-state: paused;
+}
+@keyframes circle{
+    0%{
+        left: 0;
+    }
+    40%{
+        left: 800px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid white;
+        color: black;
+    }
+    50%{
+        top: 0px;
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border: white;
+        color: blue;
+    }
+    60%{
+        right: 0;
+        left: 800px;
+        top: 300px;
+        color: white;
+    }
+    70%{
+        top: 300px;
+        right: 800px;
+        color: white;
+    }
+    80%{
+        top: 300px;
+        left: 0;
+        color: white;
+    }
+    90%{
+        bottom: 100%;
+        top: 0;
+        color: white;
+    }
+}
+
+.run{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 0;
+
+    animation-name: circle;
+    animation-direction: 2,5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.run:hover{
+    animation-play-state: paused;
+}
